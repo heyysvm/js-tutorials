@@ -1,8 +1,8 @@
 //  A R R A Y 
 
- const myArr = [1,2,3,4,5,6]
- const myHeros =["superman","gojo"]
- const myArr2 = new Array(1,2,3,4)
+//  const myArr = [1,2,3,4,5,6]
+//  const myHeros =["superman","gojo"]
+//  const myArr2 = new Array(1,2,3,4)
 
 //  console.log(myArr[0]);
  
