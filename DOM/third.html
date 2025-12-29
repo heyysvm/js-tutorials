@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codes ! DOM</title>
+</head>
+<body style="background-color:black; color: white;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(lang){
+        const li =  document.createElement("li")
+        li.innerHTML = `${lang}`
+        document.querySelector(".language").appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("TypeScript")
+    addLanguage("Cpp")
+
+    function addOptiLanguage(lang){
+        const li = document.createElement("li")
+        li.appendChild(document.createTextNode(lang))  
+        document.querySelector(".language").appendChild(li)
+    }
+    addOptiLanguage("golang")
+
+
+// EDIT 
+
+ const secondlang =  document.querySelector('li:nth-child(2)')
+//  secondlang.textContent = "Mddijjo"
+const newli = document.createElement("li")
+newli.textContent = "MOJO"
+secondlang.replaceWith(newli)
+
+const firstLang = document.querySelector("li:first-child")
+firstLang.outerHTML = "<li>TypeScriptttt</li>"
+
+// REMOVE 
+
+const lastlang = document.querySelector("li:last-child")
+lastlang.remove()
+
+
+
+
+
+
+</script>
+</html> 
