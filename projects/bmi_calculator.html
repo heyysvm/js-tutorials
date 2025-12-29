@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <style>
+    body{
+        background-color:black;
+        margin:0;
+        
+    }
+    .container{
+        background-color:lightgrey;
+        padding:30px;
+        width:500px;
+        margin:auto;
+        border-radius:20px;
+        margin-top: 30px;
+        border:dashed 1px red;
+        transition: all ease 1s;
+    }
+    .container:hover{
+        transform: scale(1.03);
+    }
+    input{
+        margin-left:15px;
+        border-radius:10px;
+        height:23px;
+    }
+    button{
+        margin: auto;
+        width:100px;
+        height:30px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+ <div class="container">
+    <h1>BMI CALCULATOR</h1>
+<form>
+     <p><label">Height in cm</label><input id="height" type="text"></p>
+  <p><label">weight in kg</label><input id="weight" type="text"></p>
+   <button>calculate</button>
+   <div id="results"></div>
+   <div id="weight-guid">
+    <h3>BMI weight guide</h3>
+    <p>udner weight = less than 18.6</p>
+    <p>normal range = 18.6 adn 24.9</p>
+    <p>overweight = greater than 24.9</p>
+   </div>
+</form>  
+ 
+</body>
+ </div>
+  
+<script src="bmi_calculator.js"></script>
+</html>
