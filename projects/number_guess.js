@@ -1,1 +1,1 @@
-const
+const number = Math.random()
