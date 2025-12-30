@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height:100vh;
+            background-color:rgb(199, 199, 88);
+        }
+        .mainheading{
+            background-color:black;
+            color:white;
+            width:200px;
+            height:30px;
+            padding:15px;
+            border-radius:10px;
+            font-family:"Roboto";
+            animation:x 5s ease infinite ;
+        }
+      @keyframes x {
+  0% {
+    transform: translateX(0px) ;
+  }
+  10% {
+    transform: translateX(1230px) ;
+  }
+  100% {
+    transform: translateY(670px) ;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>DIGITAL CLOCK</h1>
+        <h1 class="mainheading"></h1>
+    </div>
+</body>
+<script src="digital_clock.js"></script>
+</html>
