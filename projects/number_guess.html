@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Guess The Number</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+    }
+
+    .game-wrapper {
+      width: 100%;
+      max-width: 420px;
+      padding: 25px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 14px;
+      opacity: 0.85;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    input {
+      flex: 1;
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 12px 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 500;
+      background: #00e0ff;
+      color: #000;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0, 224, 255, 0.5);
+    }
+
+    button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .info {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 12px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .guesses {
+      font-weight: 500;
+      word-wrap: break-word;
+    }
+
+    .lowOrHi h2 {
+      text-align: center;
+      font-size: 16px;
+      margin-top: 10px;
+      color: #ffe66d;
+    }
+
+    .resultParas {
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    .button h2 {
+      display: inline-block;
+      padding: 10px 18px;
+      background: #ff7675;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .button h2:hover {
+      background: #ff4d4d;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="game-wrapper">
+    <h1>Guess The Number 🎯</h1>
+    <p class="subtitle">Guess a number between 1 and 100</p>
+
+    <form>
+      <input type="number" id="guessField" placeholder="Enter your guess" />
+      <button id="subt" type="button">Guess</button>
+    </form>
+
+    <div class="info">
+      <div class="card">
+        <p>Previous Guesses</p>
+        <p class="guesses"></p>
+      </div>
+
+      <div class="card">
+        <p>Remaining Attempts</p>
+        <p class="lastResult">10</p>
+      </div>
+    </div>
+
+    <div class="lowOrHi"></div>
+    <div class="resultParas"></div>
+  </div>
+
+  <script src="number_guess.js">
+  </script>
+</body>
+</html>
