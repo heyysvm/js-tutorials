@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>CODE w Events</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    let uniqueID = null
+    const sayShivam = function(){
+    console.log("Shivam");
+    }
+    const changeH1 = function(){
+    document.querySelector('h1').innerHTML="bes JS Series"
+    }
+    uniqueID = setTimeout(changeH1,5000)
+     document.querySelector("#stop").addEventListener("click",function(){
+         clearTimeout(uniqueID)
+         console.log("cleared");
+         
+     })
+</script>
+</html>
