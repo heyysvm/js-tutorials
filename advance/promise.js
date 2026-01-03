@@ -107,4 +107,5 @@ fetch("url")
 .then((data) => {
     console.log(data);
 })
-.catch((error) => console.log(error));
+.catch((error) => console.log(erro r));
+ 
