@@ -32,8 +32,6 @@ const maxy = {
 
 // Object.defineProperties(maxy , {"key": {descriptor}, "key2": {descriptor} })
 
-
-
 console.log(Object.getOwnPropertyDescriptor(maxy,"name"));
 
 for (let [key,value] of Object.entries(maxy)) {
