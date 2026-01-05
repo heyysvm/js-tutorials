@@ -19,3 +19,5 @@ function clickHandler(color){
 
 document.getElementById("orange").onclick=clickHandler("orange")
 document.getElementById("green").onclick=clickHandler("green")
+// 
+..
